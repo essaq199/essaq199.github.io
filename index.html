@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سباق الوقت — Time Race</title>
+<meta name="description" content="العب ضد أصدقائك واختبر معلوماتك في سباق الوقت — التطبيق الأول على App Store">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background: #0f0a1f;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .logo {
+    font-size: 72px;
+    margin-bottom: 16px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: 900;
+    background: linear-gradient(135deg, #a855f7, #ec4899, #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: #9ca3af;
+    margin-bottom: 40px;
+  }
+  .badges {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .badge {
+    background: linear-gradient(135deg, #1e1040, #2d1060);
+    border: 1px solid #4c1d95;
+    border-radius: 14px;
+    padding: 12px 24px;
+    font-size: 15px;
+    color: #c4b5fd;
+  }
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 8px 32px rgba(168,85,247,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 60px;
+  }
+  .download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(168,85,247,0.6);
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .feature {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 24px 16px;
+  }
+  .feature-icon { font-size: 36px; margin-bottom: 12px; }
+  .feature-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .feature-desc { font-size: 13px; color: #9ca3af; }
+  footer {
+    color: #4b5563;
+    font-size: 13px;
+  }
+  footer a { color: #6d28d9; text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="logo">⏱️</div>
+  <h1>سباق الوقت</h1>
+  <p class="subtitle">Time Race — اختبر معلوماتك وتحدَّ أصدقاءك</p>
+
+  <div class="badges">
+    <div class="badge">🏆 Top 10 App Store</div>
+    <div class="badge">🌍 متعدد اللغات</div>
+    <div class="badge">⚡ أونلاين مباشر</div>
+  </div>
+
+  <a class="download-btn" href="https://apps.apple.com/app/id6764367677">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+    حمّل من App Store
+  </a>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">🧠</div>
+      <div class="feature-title">+1489 سؤال</div>
+      <div class="feature-desc">معرفة عامة، رياضة، تاريخ، علوم، ترفيه</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🌐</div>
+      <div class="feature-title">لعب أونلاين</div>
+      <div class="feature-desc">تحدَّ لاعبين حقيقيين في الوقت الفعلي</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🏅</div>
+      <div class="feature-title">لوحة المتصدرين</div>
+      <div class="feature-desc">سجّل وتتبع تقدمك مقارنةً بالعالم</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🌙</div>
+      <div class="feature-title">عربي وإنجليزي</div>
+      <div class="feature-desc">التطبيق متاح بكلتا اللغتين بالكامل</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 سباق الوقت — Time Race. جميع الحقوق محفوظة.</p>
+    <p style="margin-top:6px"><a href="mailto:sibaqalwaqt@gmail.com">sibaqalwaqt@gmail.com</a></p>
+  </footer>
+</body>
+</html>
